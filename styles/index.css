@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #76d422;
+    color: black;
+}
+
+#easypc-logo {
+    height: 40px;
+    width: 16 0px;
+}
+
+#cart-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("/public/laptop.png") no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+.home button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff9900;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home button:hover {
+    background-color: #e68a00;
+}
+
+.home p {
+    margin-top: 20px;
+    font-size: 1rem;
+    max-width: 600px;
+}
+
+.about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("/public/aboutbg.png") no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
