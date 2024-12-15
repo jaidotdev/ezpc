@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #76d422;
+    color: black;
+}
+
+#easypc-logo {
+    height: 40px;
+    width: 16 0px;
+}
+
+#cart-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.shop {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.shop-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.product-card .price {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.product-card .discount {
+    font-size: 1rem;
+    color: #d9534f;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.product-card .view-now {
+    background-color: #333e48;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+    flex: 1;
+}
+
+.product-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.view-now:hover {
+    background-color: #fed700;
+    color: black;
+    transition: background-color 0.3s;
+}
