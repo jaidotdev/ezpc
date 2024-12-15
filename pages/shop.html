@@ -25,114 +25,369 @@
         <section class="shop">
             <div class="shop-container">
                 <div class="product-card">
-                    <img src="../public/lenovo_v15.webp" alt="Lenovo V15 G4" />
+                    <img src="../public/lenovo_v15.webp" />
                     <h3>Lenovo V15 G4</h3>
                     <p class="price">₱27,995.00</p>
+                    <input type="hidden" id="item1" value="Lenovo V15 G4" />
+                    <input type="hidden" id="price1" value="27995" />
                     <div class="product-buttons">
-                        <button class="view-now">View Product</button>
+                        <button class="view-now" onclick="addToCart(1)">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
                 <div class="product-card">
-                    <img src="../public/ideapad.webp" alt="Lenovo V15 G4 IRU" />
+                    <img src="../public/ideapad.webp" />
                     <h3>Lenovo IdeaPad 1</h3>
-                    <p class="price">₱27,995.00</p>
+                    <p class="price">₱21,995.00</p>
+                    <input type="hidden" id="item2" value="Lenovo VideaPad 1" />
+                    <input type="hidden" id="price2" value="21995" />
                     <div class="product-buttons">
-                        <button class="view-now">View Product</button>
+                        <button class="view-now" onclick="addToCart(2)">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
                 <div class="product-card">
-                    <img
-                        src="../public/lenovoLoq.webp"
-                        alt="Lenovo IdeaPad 1"
-                    />
+                    <img src="../public/lenovoLoq.webp" />
                     <h3>Lenovo LOQ 15IRX9</h3>
                     <p class="price">₱51,986.00</p>
+                    <input type="hidden" id="item3" value="Lenovo LOQ" />
+                    <input type="hidden" id="price3" value="51986" />
                     <div class="product-buttons">
-                        <button class="view-now">View Product</button>
+                        <button class="view-now" onclick="addToCart(3)">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
                 <div class="product-card">
-                    <img
-                        src="../public/lenovolegion.webp"
-                        alt="Acer Aspire 3"
-                    />
+                    <img src="../public/lenovolegion.webp" />
                     <h3>Legion 5i</h3>
                     <p class="price">₱82,056.00</p>
+                    <input type="hidden" id="item4" value="Legion 5 I" />
+                    <input type="hidden" id="price4" value="82056" />
                     <div class="product-buttons">
-                        <button class="view-now">View Product</button>
+                        <button class="view-now" onclick="addToCart(4)">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
                 <div class="product-card">
-                    <img
-                        src="../public/asus_rog_zephyrus_g14.jpg"
-                        alt="Gigabyte G5"
-                    />
+                    <img src="../public/asus_rog_zephyrus_g14.jpg" />
                     <h3>ASUS ROG Zephyrus G14</h3>
                     <p class="price">₱84,995.00</p>
+                    <input
+                        type="hidden"
+                        id="item5"
+                        value="Asus Rog Zephyrus G14"
+                    />
+                    <input type="hidden" id="price5" value="84995" />
                     <div class="product-buttons">
-                        <button class="view-now">View Product</button>
+                        <button class="view-now" onclick="addToCart(5)">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
                 <div class="product-card">
-                    <img
-                        src="../public/asus_vivobook_16.webp"
-                        alt="Lenovo Tab P11"
-                    />
+                    <img src="../public/asus_vivobook_16.webp" />
                     <h3>ASUS Vivibook 16</h3>
                     <p class="price">₱31,999.00</p>
+                    <input type="hidden" id="item6" value="Asus Vivobook 16" />
+                    <input type="hidden" id="price6" value="31999" />
                     <div class="product-buttons">
-                        <button class="view-now">View Product</button>
+                        <button class="view-now" onclick="addToCart(6)">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
                 <div class="product-card">
-                    <img src="../public/asustuf.png" alt="Gigabyte G5" />
+                    <img src="../public/asustuf.png" />
                     <h3>ASUS TUF Gaming A15</h3>
                     <p class="price">₱61,995.00</p>
+                    <input
+                        type="hidden"
+                        id="item7"
+                        value="Asus TUF Gaming A15"
+                    />
+                    <input type="hidden" id="price7" value="61995" />
                     <div class="product-buttons">
-                        <button class="view-now">View Product</button>
+                        <button class="view-now" onclick="addToCart(7)">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
                 <div class="product-card">
-                    <img src="../public/asuszenbook.png" alt="Gigabyte G5" />
+                    <img src="../public/asuszenbook.png" />
                     <h3>ASUS Zenbook 14</h3>
                     <p class="price">₱63,995.00</p>
+                    <input type="hidden" id="item8" value="Asus Zenbook 14" />
+                    <input type="hidden" id="price8" value="63995" />
                     <div class="product-buttons">
-                        <button class="view-now">View Product</button>
+                        <button class="view-now" onclick="addToCart(8)">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
                 <div class="product-card">
-                    <img src="../public/acernitrov.webp" alt="Gigabyte G5" />
+                    <img src="../public/acernitrov.webp" />
                     <h3>Acer Nitro V</h3>
                     <p class="price">₱71,249.00</p>
+                    <input type="hidden" id="item9" value="Acer Nitro V" />
+                    <input type="hidden" id="price9" value="71249" />
                     <div class="product-buttons">
-                        <button class="view-now">View Product</button>
+                        <button class="view-now" onclick="addToCart(9)">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
                 <div class="product-card">
-                    <img src="../public/aceraspire3.jpg" alt="Lenovo Tab P11" />
+                    <img src="../public/aceraspire3.jpg" />
                     <h3>Acer Aspire 3</h3>
                     <p class="price">₱37,499.00</p>
+                    <input type="hidden" id="item10" value="Acer Aspire 3" />
+                    <input type="hidden" id="price10" value="37499" />
                     <div class="product-buttons">
-                        <button class="view-now">View Product</button>
+                        <button class="view-now" onclick="addToCart(10)">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
                 <div class="product-card">
-                    <img src="../public/acerswift3.jpg" alt="Gigabyte G5" />
+                    <img src="../public/acerswift3.jpg" />
                     <h3>Acer Swift 3</h3>
                     <p class="price">₱44,900.00</p>
+                    <input type="hidden" id="item11" value="Acer Swift 3" />
+                    <input type="hidden" id="price11" value="44900" />
                     <div class="product-buttons">
-                        <button class="view-now">View Product</button>
+                        <button class="view-now" onclick="addToCart(11)">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
                 <div class="product-card">
-                    <img src="../public/acerswift.webp" alt="Gigabyte G5" />
+                    <img src="../public/acerswift.webp" />
                     <h3>Acer Swift Edge 16</h3>
                     <p class="price">₱41,990.00</p>
+                    <input
+                        type="hidden"
+                        id="item12"
+                        value="Acer Swift Edge 16"
+                    />
+                    <input type="hidden" id="price12" value="41990" />
                     <div class="product-buttons">
-                        <button class="view-now">View Product</button>
+                        <button class="view-now" onclick="addToCart(12)">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="payment">
+            <div class="container">
+                <table id="productTable" border="1">
+                    <thead>
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Product Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td>1</td>
+                        <td>Lenovo V15 G4</td>
+                        <td>₱27,995.00</td>
+                        <td class="quantitybtns">
+                            <button onclick="decrement(1)">-</button
+                            ><input
+                                type="text"
+                                id="quantity1"
+                                value="0"
+                                readonly
+                            /><button onclick="increment(1)">+</button>
+                        </td>
+                    </tbody>
+                    <tbody>
+                        <td>2</td>
+                        <td>Lenovo IdeaPad 1</td>
+                        <td>₱21,995.00</td>
+                        <td class="quantitybtns">
+                            <button onclick="decrement(2)">-</button
+                            ><input
+                                type="text"
+                                id="quantity2"
+                                value="0"
+                                readonly
+                            /><button onclick="increment(2)">+</button>
+                        </td>
+                    </tbody>
+                    <tbody>
+                        <td>3</td>
+                        <td>Lenovo LOQ 15IRX9</td>
+                        <td>₱51,986.00</td>
+                        <td class="quantitybtns">
+                            <button onclick="decrement(3)">-</button
+                            ><input
+                                type="text"
+                                id="quantity3"
+                                value="0"
+                                readonly
+                            /><button onclick="increment(3)">+</button>
+                        </td>
+                    </tbody>
+                    <tbody>
+                        <td>4</td>
+                        <td>Legion 5i</td>
+                        <td>₱82,056.00</td>
+                        <td class="quantitybtns">
+                            <button onclick="decrement(4)">-</button
+                            ><input
+                                type="text"
+                                id="quantity4"
+                                value="0"
+                                readonly
+                            /><button onclick="increment(4)">+</button>
+                        </td>
+                    </tbody>
+                    <tbody>
+                        <td>5</td>
+                        <td>ASUS ROG Zephyrus G14</td>
+                        <td>₱84,995.00</td>
+                        <td class="quantitybtns">
+                            <button onclick="decrement(5)">-</button
+                            ><input
+                                type="text"
+                                id="quantity5"
+                                value="0"
+                                readonly
+                            /><button onclick="increment(5)">+</button>
+                        </td>
+                    </tbody>
+                    <tbody>
+                        <td>6</td>
+                        <td>ASUS Vivibook 16</td>
+                        <td>₱31,999.00</td>
+                        <td class="quantitybtns">
+                            <button onclick="decrement(6)">-</button
+                            ><input
+                                type="text"
+                                id="quantity6"
+                                value="0"
+                                readonly
+                            /><button onclick="increment(6)">+</button>
+                        </td>
+                    </tbody>
+                    <tbody>
+                        <td>7</td>
+                        <td>ASUS TUF Gaming A15</td>
+                        <td>₱61,995.00</td>
+                        <td class="quantitybtns">
+                            <button onclick="decrement(7)">-</button
+                            ><input
+                                type="text"
+                                id="quantity7"
+                                value="0"
+                                readonly
+                            /><button onclick="increment(7)">+</button>
+                        </td>
+                    </tbody>
+                    <tbody>
+                        <td>8</td>
+                        <td>ASUS Zenbook 14</td>
+                        <td>₱63,995.00</td>
+                        <td class="quantitybtns">
+                            <button onclick="decrement(8)">-</button
+                            ><input
+                                type="text"
+                                id="quantity8"
+                                value="0"
+                                readonly
+                            /><button onclick="increment(8)">+</button>
+                        </td>
+                    </tbody>
+                    <tbody>
+                        <td>9</td>
+                        <td>Acer Nitro V</td>
+                        <td>₱71,249.00</td>
+                        <td class="quantitybtns">
+                            <button onclick="decrement(9)">-</button
+                            ><input
+                                type="text"
+                                id="quantity9"
+                                value="0"
+                                readonly
+                            /><button onclick="increment(9)">+</button>
+                        </td>
+                    </tbody>
+                    <tbody>
+                        <td>10</td>
+                        <td>Acer Aspire 3</td>
+                        <td>₱37,499.00</td>
+                        <td class="quantitybtns">
+                            <button onclick="decrement(10)">-</button
+                            ><input
+                                type="text"
+                                id="quantity10"
+                                value="0"
+                                readonly
+                            /><button onclick="increment(10)">+</button>
+                        </td>
+                    </tbody>
+                    <tbody>
+                        <td>11</td>
+                        <td>Acer Swift 3</td>
+                        <td>₱44,900.00</td>
+                        <td class="quantitybtns">
+                            <button onclick="decrement(11)">-</button
+                            ><input
+                                type="text"
+                                id="quantity11"
+                                value="0"
+                                readonly
+                            /><button onclick="increment(11)">+</button>
+                        </td>
+                    </tbody>
+                    <tbody>
+                        <td>12</td>
+                        <td>Acer Swift Edge 16</td>
+                        <td>₱41,990.00</td>
+                        <td class="quantitybtns">
+                            <button onclick="decrement(12)">-</button
+                            ><input
+                                type="text"
+                                id="quantity12"
+                                value="0"
+                                readonly
+                            /><button onclick="increment(12)">+</button>
+                        </td>
+                    </tbody>
+                </table>
+                <hr />
+                <br />
+                <div id="calculateBtn">
+                    <button onclick="calculateTotal()">Update Total</button>
+                </div>
+
+                <div>
+                    <label for="total">Total: ₱</label>
+                    <span id="total">0.00</span>
+                </div>
+                <br />
+                <div>
+                    <label for="payment">Payment: ₱</label>
+                    <input
+                        type="number"
+                        id="payment"
+                        oninput="calculateChange()"
+                    />
+                </div>
+
+                <div>
+                    <label for="change">Change: ₱</label>
+                    <span id="change">0.00</span>
+                </div>
+            </div>
+        </section>
     </body>
+    <script src="../scripts/index.js" defer></script>
 </html>
