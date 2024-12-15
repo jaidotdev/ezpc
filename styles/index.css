@@ -44,7 +44,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("../public/laptop.png") no-repeat center center/cover;
+    background: url("/../public/laptop.png") no-repeat center center/cover;
     color: white;
     text-align: center;
     font-weight: 800;
@@ -163,9 +163,9 @@ body {
 }
 
 .about {
-    background: url("../public/about.png") no-repeat center center/cover;
+    background: url("/../public/about.png") no-repeat center center/cover;
 }
 
 .contact {
-    background: url("../public/contact.jpg") no-repeat center center/cover;
+    background: url("/../public/contact.jpg") no-repeat center center/cover;
 }
