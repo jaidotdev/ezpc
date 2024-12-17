@@ -18,7 +18,8 @@
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </div>
-            <div class="cart">
+            <div class="cart" onclick="gotoCart()">
+                <span>0</span>
                 <img src="public/cart.png" alt="cart logo" id="cart-logo" />
             </div>
         </nav>
@@ -47,12 +48,11 @@
                     <p>
                         EasyPC, founded in the Philippines, aims to provide
                         quality computer components and accessories to tech
-                        enthusiasts and professionals. With multiple branches
-                        and an online store, the company offers competitive
-                        pricing, diverse products, and excellent customer
-                        service. EasyPC is a go-to destination for PC builders,
-                        gamers, and IT professionals, empowering the local tech
-                        community.
+                        enthusiasts and professionals. With multiple branchesand
+                        an online store, the company offers competitive pricing,
+                        diverse products, and excellent customer service. EasyPC
+                        is a go-to destination for PC builders, gamers, and IT
+                        professionals, empowering the local tech community.
                     </p>
                 </div>
             </div>
@@ -66,15 +66,15 @@
                     <p><strong>Last Name:</strong> Infante</p>
                     <p><strong>Email:</strong> jinfante@gbox.ncf.edu.ph</p>
                     <p>
-                        <strong>GitHub:</strong>
-                        <a href="https://github.com/jaidotdev" target="_blank"
+                        <strong>GitHub:</strong
+                        ><a href="https://github.com/jaidotdev" target="_blank"
                             >jaidotdev</a
                         >
                     </p>
                 </div>
                 <div class="contact-form">
                     <h1>Send a Message</h1>
-                    <form action="your-form-handler-url" method="post">
+                    <form>
                         <label for="email">Your Email:</label>
                         <input
                             type="email"
@@ -83,7 +83,6 @@
                             required
                             placeholder="Your email address"
                         />
-
                         <label for="message">Your Message:</label>
                         <textarea
                             id="message"
@@ -92,17 +91,19 @@
                             required
                             placeholder="Write your message here"
                         ></textarea>
-
                         <button type="submit">Send Message</button>
                     </form>
                 </div>
             </div>
         </section>
-
         <script>
             document.getElementById("shopBtn").addEventListener("click", () => {
-                location.href = "../pages/shop.html";
+                location.href = "./pages/shop.html";
             });
+
+            function gotoCart() {
+                location.href = "pages/cart.html";
+            }
         </script>
     </body>
 </html>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
     padding: 0;
     margin: 0;
@@ -6,6 +8,7 @@
 
 body {
     scroll-behavior: smooth;
+    font-family: "Noto Sans", serif;
 }
 
 .navbar {
@@ -22,9 +25,14 @@ body {
     width: 16 0px;
 }
 
+.cart {
+    cursor: pointer;
+}
+
 #cart-logo {
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 
 .navbar .menu {
@@ -61,6 +69,11 @@ body {
     position: relative;
 }
 
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 12px 12px 18px rgba(0, 0, 0, 0.2);
+}
+
 .product-card img {
     width: 100%;
     height: auto;
@@ -78,15 +91,7 @@ body {
     color: #333;
 }
 
-.product-card .discount {
-    font-size: 1rem;
-    color: #d9534f;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.product-card .view-now {
+.product-card .add-cart {
     background-color: #333e48;
     color: white;
     padding: 10px 20px;
@@ -105,14 +110,13 @@ body {
     margin-top: 10px;
 }
 
-.view-now:hover {
+.add-cart:hover {
     background-color: #fed700;
     color: black;
     transition: background-color 0.3s;
 }
 
 .payment {
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,7 +156,6 @@ th {
     background-color: #f2f2f2;
 }
 
-input[type="number"],
 input[type="text"] {
     padding: 8px;
     margin: 5px;

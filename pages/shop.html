@@ -1,4 +1,4 @@
-<html lang="en">
+<html>
     <head>
         <title>Shop</title>
         <link rel="stylesheet" href="../styles/shop.css" />
@@ -7,7 +7,7 @@
     <body>
         <nav class="navbar">
             <div class="logo">
-                <a href="#home"
+                <a href="../index.html"
                     ><img
                         src="../public/easypc.png"
                         alt="easy pc logo"
@@ -18,7 +18,9 @@
                 <a href="../index.html">About</a>
                 <a href="../index.html">Contact</a>
             </div>
-            <div class="cart">
+
+            <div class="cart" onclick="gotoCart()">
+                <span>0</span>
                 <img src="../public/cart.png" alt="cart logo" id="cart-logo" />
             </div>
         </nav>
@@ -31,7 +33,7 @@
                     <input type="hidden" id="item1" value="Lenovo V15 G4" />
                     <input type="hidden" id="price1" value="27995" />
                     <div class="product-buttons">
-                        <button class="view-now" onclick="addToCart(1)">
+                        <button class="add-cart" onclick="addToCart(1)">
                             Add to cart
                         </button>
                     </div>
@@ -43,7 +45,7 @@
                     <input type="hidden" id="item2" value="Lenovo VideaPad 1" />
                     <input type="hidden" id="price2" value="21995" />
                     <div class="product-buttons">
-                        <button class="view-now" onclick="addToCart(2)">
+                        <button class="add-cart" onclick="addToCart(2)">
                             Add to cart
                         </button>
                     </div>
@@ -55,7 +57,7 @@
                     <input type="hidden" id="item3" value="Lenovo LOQ" />
                     <input type="hidden" id="price3" value="51986" />
                     <div class="product-buttons">
-                        <button class="view-now" onclick="addToCart(3)">
+                        <button class="add-cart" onclick="addToCart(3)">
                             Add to cart
                         </button>
                     </div>
@@ -67,7 +69,7 @@
                     <input type="hidden" id="item4" value="Legion 5 I" />
                     <input type="hidden" id="price4" value="82056" />
                     <div class="product-buttons">
-                        <button class="view-now" onclick="addToCart(4)">
+                        <button class="add-cart" onclick="addToCart(4)">
                             Add to cart
                         </button>
                     </div>
@@ -83,7 +85,7 @@
                     />
                     <input type="hidden" id="price5" value="84995" />
                     <div class="product-buttons">
-                        <button class="view-now" onclick="addToCart(5)">
+                        <button class="add-cart" onclick="addToCart(5)">
                             Add to cart
                         </button>
                     </div>
@@ -95,7 +97,7 @@
                     <input type="hidden" id="item6" value="Asus Vivobook 16" />
                     <input type="hidden" id="price6" value="31999" />
                     <div class="product-buttons">
-                        <button class="view-now" onclick="addToCart(6)">
+                        <button class="add-cart" onclick="addToCart(6)">
                             Add to cart
                         </button>
                     </div>
@@ -111,7 +113,7 @@
                     />
                     <input type="hidden" id="price7" value="61995" />
                     <div class="product-buttons">
-                        <button class="view-now" onclick="addToCart(7)">
+                        <button class="add-cart" onclick="addToCart(7)">
                             Add to cart
                         </button>
                     </div>
@@ -123,7 +125,7 @@
                     <input type="hidden" id="item8" value="Asus Zenbook 14" />
                     <input type="hidden" id="price8" value="63995" />
                     <div class="product-buttons">
-                        <button class="view-now" onclick="addToCart(8)">
+                        <button class="add-cart" onclick="addToCart(8)">
                             Add to cart
                         </button>
                     </div>
@@ -135,7 +137,7 @@
                     <input type="hidden" id="item9" value="Acer Nitro V" />
                     <input type="hidden" id="price9" value="71249" />
                     <div class="product-buttons">
-                        <button class="view-now" onclick="addToCart(9)">
+                        <button class="add-cart" onclick="addToCart(9)">
                             Add to cart
                         </button>
                     </div>
@@ -147,7 +149,7 @@
                     <input type="hidden" id="item10" value="Acer Aspire 3" />
                     <input type="hidden" id="price10" value="37499" />
                     <div class="product-buttons">
-                        <button class="view-now" onclick="addToCart(10)">
+                        <button class="add-cart" onclick="addToCart(10)">
                             Add to cart
                         </button>
                     </div>
@@ -159,7 +161,7 @@
                     <input type="hidden" id="item11" value="Acer Swift 3" />
                     <input type="hidden" id="price11" value="44900" />
                     <div class="product-buttons">
-                        <button class="view-now" onclick="addToCart(11)">
+                        <button class="add-cart" onclick="addToCart(11)">
                             Add to cart
                         </button>
                     </div>
@@ -175,219 +177,13 @@
                     />
                     <input type="hidden" id="price12" value="41990" />
                     <div class="product-buttons">
-                        <button class="view-now" onclick="addToCart(12)">
+                        <button class="add-cart" onclick="addToCart(12)">
                             Add to cart
                         </button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="payment">
-            <div class="container">
-                <table id="productTable" border="1">
-                    <thead>
-                        <tr>
-                            <th>Product ID</th>
-                            <th>Product Name</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <td>1</td>
-                        <td>Lenovo V15 G4</td>
-                        <td>₱27,995.00</td>
-                        <td class="quantitybtns">
-                            <button onclick="decrement(1)">-</button
-                            ><input
-                                type="text"
-                                id="quantity1"
-                                value="0"
-                                readonly
-                            /><button onclick="increment(1)">+</button>
-                        </td>
-                    </tbody>
-                    <tbody>
-                        <td>2</td>
-                        <td>Lenovo IdeaPad 1</td>
-                        <td>₱21,995.00</td>
-                        <td class="quantitybtns">
-                            <button onclick="decrement(2)">-</button
-                            ><input
-                                type="text"
-                                id="quantity2"
-                                value="0"
-                                readonly
-                            /><button onclick="increment(2)">+</button>
-                        </td>
-                    </tbody>
-                    <tbody>
-                        <td>3</td>
-                        <td>Lenovo LOQ 15IRX9</td>
-                        <td>₱51,986.00</td>
-                        <td class="quantitybtns">
-                            <button onclick="decrement(3)">-</button
-                            ><input
-                                type="text"
-                                id="quantity3"
-                                value="0"
-                                readonly
-                            /><button onclick="increment(3)">+</button>
-                        </td>
-                    </tbody>
-                    <tbody>
-                        <td>4</td>
-                        <td>Legion 5i</td>
-                        <td>₱82,056.00</td>
-                        <td class="quantitybtns">
-                            <button onclick="decrement(4)">-</button
-                            ><input
-                                type="text"
-                                id="quantity4"
-                                value="0"
-                                readonly
-                            /><button onclick="increment(4)">+</button>
-                        </td>
-                    </tbody>
-                    <tbody>
-                        <td>5</td>
-                        <td>ASUS ROG Zephyrus G14</td>
-                        <td>₱84,995.00</td>
-                        <td class="quantitybtns">
-                            <button onclick="decrement(5)">-</button
-                            ><input
-                                type="text"
-                                id="quantity5"
-                                value="0"
-                                readonly
-                            /><button onclick="increment(5)">+</button>
-                        </td>
-                    </tbody>
-                    <tbody>
-                        <td>6</td>
-                        <td>ASUS Vivibook 16</td>
-                        <td>₱31,999.00</td>
-                        <td class="quantitybtns">
-                            <button onclick="decrement(6)">-</button
-                            ><input
-                                type="text"
-                                id="quantity6"
-                                value="0"
-                                readonly
-                            /><button onclick="increment(6)">+</button>
-                        </td>
-                    </tbody>
-                    <tbody>
-                        <td>7</td>
-                        <td>ASUS TUF Gaming A15</td>
-                        <td>₱61,995.00</td>
-                        <td class="quantitybtns">
-                            <button onclick="decrement(7)">-</button
-                            ><input
-                                type="text"
-                                id="quantity7"
-                                value="0"
-                                readonly
-                            /><button onclick="increment(7)">+</button>
-                        </td>
-                    </tbody>
-                    <tbody>
-                        <td>8</td>
-                        <td>ASUS Zenbook 14</td>
-                        <td>₱63,995.00</td>
-                        <td class="quantitybtns">
-                            <button onclick="decrement(8)">-</button
-                            ><input
-                                type="text"
-                                id="quantity8"
-                                value="0"
-                                readonly
-                            /><button onclick="increment(8)">+</button>
-                        </td>
-                    </tbody>
-                    <tbody>
-                        <td>9</td>
-                        <td>Acer Nitro V</td>
-                        <td>₱71,249.00</td>
-                        <td class="quantitybtns">
-                            <button onclick="decrement(9)">-</button
-                            ><input
-                                type="text"
-                                id="quantity9"
-                                value="0"
-                                readonly
-                            /><button onclick="increment(9)">+</button>
-                        </td>
-                    </tbody>
-                    <tbody>
-                        <td>10</td>
-                        <td>Acer Aspire 3</td>
-                        <td>₱37,499.00</td>
-                        <td class="quantitybtns">
-                            <button onclick="decrement(10)">-</button
-                            ><input
-                                type="text"
-                                id="quantity10"
-                                value="0"
-                                readonly
-                            /><button onclick="increment(10)">+</button>
-                        </td>
-                    </tbody>
-                    <tbody>
-                        <td>11</td>
-                        <td>Acer Swift 3</td>
-                        <td>₱44,900.00</td>
-                        <td class="quantitybtns">
-                            <button onclick="decrement(11)">-</button
-                            ><input
-                                type="text"
-                                id="quantity11"
-                                value="0"
-                                readonly
-                            /><button onclick="increment(11)">+</button>
-                        </td>
-                    </tbody>
-                    <tbody>
-                        <td>12</td>
-                        <td>Acer Swift Edge 16</td>
-                        <td>₱41,990.00</td>
-                        <td class="quantitybtns">
-                            <button onclick="decrement(12)">-</button
-                            ><input
-                                type="text"
-                                id="quantity12"
-                                value="0"
-                                readonly
-                            /><button onclick="increment(12)">+</button>
-                        </td>
-                    </tbody>
-                </table>
-                <hr />
-                <br />
-                <div id="calculateBtn">
-                    <button onclick="calculateTotal()">Update Total</button>
-                </div>
-
-                <div>
-                    <label for="total">Total: ₱</label>
-                    <span id="total">0.00</span>
-                </div>
-                <br />
-                <div>
-                    <label for="payment">Payment: ₱</label>
-                    <input
-                        type="number"
-                        id="payment"
-                        oninput="calculateChange()"
-                    />
-                </div>
-
-                <div>
-                    <label for="change">Change: ₱</label>
-                    <span id="change">0.00</span>
-                </div>
-            </div>
-        </section>
     </body>
-    <script src="../scripts/index.js" defer></script>
+    <script src="../scripts/index.js"></script>
 </html>
