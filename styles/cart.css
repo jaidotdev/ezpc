@@ -43,6 +43,63 @@ body {
 .navbar .menu a {
     text-decoration: none;
     color: black;
-    font-size: 1rem;
-    transition: color 0.3s;
+}
+
+.styled-table {
+    width: 40%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    background-color: white;
+    overflow: hidden;
+}
+
+.styled-table thead tr {
+    background-color: #333e48;
+    color: #fff;
+    font-weight: bold;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 15px;
+    text-align: center;
+}
+
+input {
+    text-align: center;
+}
+
+.btn-cart {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+}
+
+button.clear,
+button.calculate {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.btn-cart button {
+    width: 150px;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: #333e48;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+}
+
+.btn-cart button:hover {
+    background-color: #fed700;
+    color: black;
+    transition: background-color 0.3s;
 }

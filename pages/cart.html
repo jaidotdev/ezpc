@@ -4,24 +4,62 @@
         <link rel="stylesheet" href="../styles/cart.css" />
         <link rel="icon" href="../public/logo.png" />
     </head>
-    <body>
+    <body onload="setItem()">
         <nav class="navbar">
             <div class="logo">
-                <a href="../index.html"
-                    ><img
-                        src="../public/easypc.png"
-                        alt="easy pc logo"
-                        id="easypc-logo"
-                /></a>
+                <a href="../index.html"><img src="../public/easypc.png" alt="easy pc logo" id="easypc-logo"/></a>
             </div>
             <div class="menu">
                 <a href="../index.html">About</a>
                 <a href="../index.html">Contact</a>
             </div>
-            <div class="cart" onclick="gotoCart()">
-                <span>0</span>
-                <img src="../public/cart.png" alt="cart logo" id="cart-logo" />
+
+            <div class="cart" onclick="gotoShop()">
+                <img src="../public/store.png" alt="cart logo" id="cart-logo" />
             </div>
         </nav>
+        <div class="cart-parent">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                        </tr>
+                        <tbody></tbody>
+                        <tr>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="quantity">0</td>
+                            <td id="total">0</td>
+                        </tr>
+                        <tr>
+                            <th>Enter Cash:</th>
+                            <td><input type="text" inputmode="numeric" value="0" id="cash" /></td>
+                        </tr>
+                        <tr>
+                            <th>Change:</th>
+                            <td id="change">0</td>
+                        </tr>
+                        <tr class="btn-cart">
+                            <th colspan="2">
+                                <div class="button-container">
+                                    <button onclick="clearData()" class="clear">Clear</button>
+                                    <button onclick="calculate()" class="calculate">Calculate</button>
+                                </div>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        <script src="../scripts/index.js"></script>
+        <script>
+            function gotoShop() {
+                location.href = "shop.html";
+            }
+        </script>
     </body>
 </html>

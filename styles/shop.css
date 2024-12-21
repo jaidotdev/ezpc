@@ -43,10 +43,40 @@ body {
 .navbar .menu a {
     text-decoration: none;
     color: black;
-    font-size: 1rem;
-    transition: color 0.3s;
 }
 
+#notificationContainer {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.notification {
+    background-color: #62b236;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    animation: fadeout 10s forwards;
+}
+
+.notification.fade {
+    animation: fadeout 10s forwards;
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 .shop {
     padding: 20px;
     background-color: #f4f4f4;

@@ -4,15 +4,10 @@
         <link rel="stylesheet" href="../styles/shop.css" />
         <link rel="icon" href="../public/logo.png" />
     </head>
-    <body>
+    <body onload="updateCart()">
         <nav class="navbar">
             <div class="logo">
-                <a href="../index.html"
-                    ><img
-                        src="../public/easypc.png"
-                        alt="easy pc logo"
-                        id="easypc-logo"
-                /></a>
+                <a href="../index.html"><img src="../public/easypc.png" alt="easy pc logo" id="easypc-logo"/></a>
             </div>
             <div class="menu">
                 <a href="../index.html">About</a>
@@ -20,10 +15,11 @@
             </div>
 
             <div class="cart" onclick="gotoCart()">
-                <span>0</span>
+                <span id="cartCount"></span>
                 <img src="../public/cart.png" alt="cart logo" id="cart-logo" />
             </div>
         </nav>
+        <div id="notificationContainer"></div>
         <section class="shop">
             <div class="shop-container">
                 <div class="product-card">
@@ -33,9 +29,7 @@
                     <input type="hidden" id="item1" value="Lenovo V15 G4" />
                     <input type="hidden" id="price1" value="27995" />
                     <div class="product-buttons">
-                        <button class="add-cart" onclick="addToCart(1)">
-                            Add to cart
-                        </button>
+                        <button class="add-cart" onclick="addToCart(1)">Add to cart</button>
                     </div>
                 </div>
                 <div class="product-card">
@@ -45,9 +39,7 @@
                     <input type="hidden" id="item2" value="Lenovo VideaPad 1" />
                     <input type="hidden" id="price2" value="21995" />
                     <div class="product-buttons">
-                        <button class="add-cart" onclick="addToCart(2)">
-                            Add to cart
-                        </button>
+                        <button class="add-cart" onclick="addToCart(2)">Add to cart</button>
                     </div>
                 </div>
                 <div class="product-card">
@@ -57,37 +49,27 @@
                     <input type="hidden" id="item3" value="Lenovo LOQ" />
                     <input type="hidden" id="price3" value="51986" />
                     <div class="product-buttons">
-                        <button class="add-cart" onclick="addToCart(3)">
-                            Add to cart
-                        </button>
+                        <button class="add-cart" onclick="addToCart(3)">Add to cart</button>
                     </div>
                 </div>
                 <div class="product-card">
                     <img src="../public/lenovolegion.webp" />
                     <h3>Legion 5i</h3>
                     <p class="price">₱82,056.00</p>
-                    <input type="hidden" id="item4" value="Legion 5 I" />
+                    <input type="hidden" id="item4" value="Legion 5i" />
                     <input type="hidden" id="price4" value="82056" />
                     <div class="product-buttons">
-                        <button class="add-cart" onclick="addToCart(4)">
-                            Add to cart
-                        </button>
+                        <button class="add-cart" onclick="addToCart(4)">Add to cart</button>
                     </div>
                 </div>
                 <div class="product-card">
                     <img src="../public/asus_rog_zephyrus_g14.jpg" />
                     <h3>ASUS ROG Zephyrus G14</h3>
                     <p class="price">₱84,995.00</p>
-                    <input
-                        type="hidden"
-                        id="item5"
-                        value="Asus Rog Zephyrus G14"
-                    />
+                    <input type="hidden" id="item5" value="Asus Rog Zephyrus G14"/>
                     <input type="hidden" id="price5" value="84995" />
                     <div class="product-buttons">
-                        <button class="add-cart" onclick="addToCart(5)">
-                            Add to cart
-                        </button>
+                        <button class="add-cart" onclick="addToCart(5)">Add to cart</button>
                     </div>
                 </div>
                 <div class="product-card">
@@ -97,25 +79,17 @@
                     <input type="hidden" id="item6" value="Asus Vivobook 16" />
                     <input type="hidden" id="price6" value="31999" />
                     <div class="product-buttons">
-                        <button class="add-cart" onclick="addToCart(6)">
-                            Add to cart
-                        </button>
+                        <button class="add-cart" onclick="addToCart(6)">Add to cart</button>
                     </div>
                 </div>
                 <div class="product-card">
                     <img src="../public/asustuf.png" />
                     <h3>ASUS TUF Gaming A15</h3>
                     <p class="price">₱61,995.00</p>
-                    <input
-                        type="hidden"
-                        id="item7"
-                        value="Asus TUF Gaming A15"
-                    />
+                    <input type="hidden" id="item7" value="Asus TUF Gaming A15" />
                     <input type="hidden" id="price7" value="61995" />
                     <div class="product-buttons">
-                        <button class="add-cart" onclick="addToCart(7)">
-                            Add to cart
-                        </button>
+                        <button class="add-cart" onclick="addToCart(7)">Add to cart</button>
                     </div>
                 </div>
                 <div class="product-card">
@@ -125,9 +99,7 @@
                     <input type="hidden" id="item8" value="Asus Zenbook 14" />
                     <input type="hidden" id="price8" value="63995" />
                     <div class="product-buttons">
-                        <button class="add-cart" onclick="addToCart(8)">
-                            Add to cart
-                        </button>
+                        <button class="add-cart" onclick="addToCart(8)">Add to cart</button>
                     </div>
                 </div>
                 <div class="product-card">
@@ -137,9 +109,7 @@
                     <input type="hidden" id="item9" value="Acer Nitro V" />
                     <input type="hidden" id="price9" value="71249" />
                     <div class="product-buttons">
-                        <button class="add-cart" onclick="addToCart(9)">
-                            Add to cart
-                        </button>
+                        <button class="add-cart" onclick="addToCart(9)">Add to cart</button>
                     </div>
                 </div>
                 <div class="product-card">
@@ -149,9 +119,7 @@
                     <input type="hidden" id="item10" value="Acer Aspire 3" />
                     <input type="hidden" id="price10" value="37499" />
                     <div class="product-buttons">
-                        <button class="add-cart" onclick="addToCart(10)">
-                            Add to cart
-                        </button>
+                        <button class="add-cart" onclick="addToCart(10)">Add to cart</button>
                     </div>
                 </div>
                 <div class="product-card">
@@ -161,25 +129,17 @@
                     <input type="hidden" id="item11" value="Acer Swift 3" />
                     <input type="hidden" id="price11" value="44900" />
                     <div class="product-buttons">
-                        <button class="add-cart" onclick="addToCart(11)">
-                            Add to cart
-                        </button>
+                        <button class="add-cart" onclick="addToCart(11)">Add to cart</button>
                     </div>
                 </div>
                 <div class="product-card">
                     <img src="../public/acerswift.webp" />
                     <h3>Acer Swift Edge 16</h3>
                     <p class="price">₱41,990.00</p>
-                    <input
-                        type="hidden"
-                        id="item12"
-                        value="Acer Swift Edge 16"
-                    />
+                    <input type="hidden" id="item12" value="Acer Swift Edge 16"/>
                     <input type="hidden" id="price12" value="41990" />
                     <div class="product-buttons">
-                        <button class="add-cart" onclick="addToCart(12)">
-                            Add to cart
-                        </button>
+                        <button class="add-cart" onclick="addToCart(12)">Add to cart</button>
                     </div>
                 </div>
             </div>
